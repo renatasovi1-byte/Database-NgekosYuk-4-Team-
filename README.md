@@ -4,8 +4,6 @@ System design documentation (Data Flow Diagrams and Entity Relationship Diagram)
 
 This was a **team project (4 members)** for the Database course, D3 Applied Statistics and Computation, Universitas Negeri Semarang (2025). **My contribution: the DFD (levels 0 and 1) and the ERD.** The MySQL database and web application were implemented by my teammates from this design.
 
-
-
 ---
 
 ## Problem
@@ -24,13 +22,13 @@ Students and workers moving to the Sekaran, Kalisegoro, and Patemon area mostly 
 
 ### Level 0 (context diagram)
 
-![DFD Level 0](diagrams/Data-Flow-Diagram-dfd-level-0.drawio.png)
+![DFD Level 0](diagrams/dfd-level-0.png)
 
 The system sits between three external entities (tenant, owner, manager). Tenants search and rent, owners supply listing data, and the manager supervises data and payments.
 
 ### Level 1
 
-![DFD Level 1](diagrams/Data-Flow-Diagram-Halaman-3.drawio.png)
+![DFD Level 1](diagrams/dfd-level-1.png)
 
 Main processes:
 
@@ -44,7 +42,7 @@ Main processes:
 
 ## Entity Relationship Diagram
 
-![ERD](diagrams/ERD-ERD-Ngekost-Yuk.drawio.png)
+![ERD](diagrams/erd.png)
 
 Notation: Chen. Entities are rectangles, attributes are ovals, relationships are diamonds, and cardinality is marked on the connecting lines.
 
@@ -72,6 +70,8 @@ Notation: Chen. Entities are rectangles, attributes are ovals, relationships are
 | Boarding house **appears in** rental report | 1 : M | One listing appears in reports of different periods |
 | Manager **monitors** rental report | 1 : M | Manager views reports across periods |
 
+> Check the last three rows against your final ERD image and correct them if they differ.
+
 ## Design vs. implementation
 
 The team's implemented MySQL database consolidated the 8 designed entities into **4 tables**:
@@ -98,17 +98,16 @@ Merging the three user types into one table avoids duplicated account data. The 
 ```
 .
 ├── diagrams/
-|   ├── Data Flow Diagram-Halaman-3.drawio.png    #DFD Level 1
-│   ├── Data Flow Diagram-dfd level 0.drawio.png
-│   ├── Data Flow Diagram-tabell.drawio.png
-│   ├── ERD-ERD Ngekost Yuk.drawio.png
+│   ├── dfd-level-0.png
+│   ├── dfd-level-1.png
+│   ├── erd.png
 │   └── source/draw.io
 └── README.md
 ```
 
 ## Tools
 
-Diagrams drawn with **draw.io, VSCode, MySQL**. The implementation stack (by teammates) used PHP, MySQL, and XAMPP.
+Diagrams drawn with **draw.io**. The implementation stack (by teammates) used PHP, MySQL, and XAMPP.
 
 ## Team
 
