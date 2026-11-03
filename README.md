@@ -24,13 +24,13 @@ Students and workers moving to the Sekaran, Kalisegoro, and Patemon area mostly 
 
 ### Level 0 (context diagram)
 
-![DFD Level 0](diagrams/dfd-level-0.png)
+![DFD Level 0](diagrams/Data-Flow-Diagram-dfd-level-0.drawio.png)
 
 The system sits between three external entities (tenant, owner, manager). Tenants search and rent, owners supply listing data, and the manager supervises data and payments.
 
 ### Level 1
 
-![DFD Level 1](diagrams/dfd-level-1.png)
+![DFD Level 1](diagrams/Data-Flow-Diagram-Halaman-3.drawio.png)
 
 Main processes:
 
@@ -44,7 +44,7 @@ Main processes:
 
 ## Entity Relationship Diagram
 
-![ERD](diagrams/erd.png)
+![ERD](diagrams/ERD-ERD-Ngekost-Yuk.drawio.png)
 
 Notation: Chen. Entities are rectangles, attributes are ovals, relationships are diamonds, and cardinality is marked on the connecting lines.
 
